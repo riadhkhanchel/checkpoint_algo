@@ -1,0 +1,33 @@
+ALGORITHM SentenceAnalyser
+VAR
+    sentence : STRING;
+    numLetter :INTEGER:=0;
+    numVowel :INTEGER=0;
+    numWord : INTEGER =0;
+
+BEGIN
+WHILE ( char <> ".") DO
+    IF (char = " ") THEN
+        numWord = numWord+1;
+    ELSE
+        numletter = numletter + 1;
+        SWITCH (char ) DO
+            case a : numVowels = numVowels + 1;
+            BREAK;
+            case E : numVowels = numVowels + 1;
+            BREAK;
+            case I : numVowels = numVowels + 1;
+            BREAK;
+            case O : numVowels = numVowels + 1;
+            BREAK;
+            case U : numVowels = numVowels + 1;
+            BREAK;
+            default : BREAK;
+        END_SWITCH
+    END_IF
+END_WHILE
+Write (numLetter);
+Write (NumWord);
+Write (numVowel);
+
+END
